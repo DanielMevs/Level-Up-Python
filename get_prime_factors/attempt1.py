@@ -13,8 +13,7 @@ class Solution:
                 self.dfs(divisor, divisor)
                 self.dfs(factor // divisor, divisor)
             else:
-                while self.is_prime(divisor):
-                    divisor += 1
+                divisor += 1
                 self.dfs(factor, divisor)
 
         dfs(num, 2)     
